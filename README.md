@@ -11,4 +11,5 @@ https://github.com/commonmark/commonmark.js/
 
 Run
 * Copy folder to your favorite web server
-* launch event_detail.html
+* Add Airtable secret keys
+* Launch event_details.html with id for events for example: http://127.0.0.1:5500/event_details.html?id=1
