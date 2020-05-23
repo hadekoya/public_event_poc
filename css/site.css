@@ -1,0 +1,23 @@
+.goog-te-spinner-pos {
+    z-index: 1000;
+    position: fixed;
+    transition-delay: 0.6s;
+    left: -1000px;
+    top: -1000px;
+}
+
+.logoConnect{
+    height: 70px;
+    padding: 0px;
+}
+
+body{
+    background-color: #e6edf1 !important;
+}
+
+#content {
+    background-color:white;
+    margin: 1px 100px 200px 250px;
+    width: 70%;
+    padding: 10px;
+  }
