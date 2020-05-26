@@ -50,15 +50,17 @@
             var app_key = config.APP_KEY;
 
             axios.get(
-                "https://api.airtable.com/v0/" + app_id + "/Event?filterByFormula=ID_=" + id,
+                "https://n9yvq.sse.codesandbox.io/events/"+id
+              /*  "https://api.airtable.com/v0/" + app_id + "/Event?filterByFormula=ID_=" + id,
                 {
                     headers: { Authorization: "Bearer " + app_key }
-                }
+                }*/
             ).then(function (response) {
-                items = response.data.records;
-
-                data = items[0]["fields"];
-
+                //items = response.data.records;
+                console.log(response);
+                data = response.data[0];
+                console.log(data);
+                
                 /*var reader = new commonmark.Parser();
                 var writer = new commonmark.HtmlRenderer();
                 var parsed = reader.parse(data.Participate);
